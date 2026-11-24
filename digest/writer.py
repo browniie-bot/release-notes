@@ -21,7 +21,6 @@ class Writer:
             reply = self.client.messages.create(
                 model=self.model,
                 max_tokens=400,
-                temperature=0.3,
                 system="Write one short paragraph of release notes from these commit subjects.",
                 messages=[{"role": "user", "content": f"Area: {area}\n" + "\n".join(lines)}],
             )
