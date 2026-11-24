@@ -4,7 +4,7 @@ import anthropic
 
 from digest.grouping import by_area
 
-MODEL = "claude-3-5-sonnet-20241022"
+MODEL = "claude-sonnet-4-5-20250929"
 
 
 class Writer:
